@@ -11,14 +11,14 @@ import java.util.List;
 @Component
 public class BeerExpert
 {
-//  @Autowired
-//  @Qualifier("light")
-  @Value("${light.brand}")
+  @Autowired
+  @Qualifier("light")
+//  @Value("${light.brand}")
   private String lightBrand;
 
-//  @Autowired
-//  @Qualifier("amber")
-  @Value("${amber.brand}")
+  @Autowired
+  @Qualifier("amber")
+//  @Value("${amber.brand}")
   private String amberBrand;
 
 //  @Autowired

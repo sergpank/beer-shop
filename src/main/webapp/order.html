@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beer Order Page</title>
+</head>
+<body>
+
+<form method="GET" action="processOrder">
+  <label>
+    Enter your name :
+    <input type="text" name="userName"><br>
+  </label>
+
+  <label>
+    Enter your age :
+    <input type="text" name="userAge">
+  </label><br>
+
+  Select beer type :
+  <select name="beerType">
+    <option value="dark">Dark beer</option>
+    <option value="light">Light beer</option>
+    <option value="amber">Amber beer</option>
+    <option value="brown">Brown beer</option>
+  </select><br>
+
+  Enter number of bottles :
+  <input type="text" name="nrOfBottles"><br>
+
+  <input type="submit" value="SUBMIT ORDER">
+</form>
+
+</body>
+</html>

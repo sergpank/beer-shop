@@ -27,10 +27,11 @@ out.println("Scriptlet : " + Counter.getCount() + "<br>");
 <%! int instanceCounter = 0; %>
 <%= "Instance variable : " + (++instanceCounter) + "<br>" %>
 
-<%! int doubleCount()
-{
-    return instanceCounter * 2;
-}
+<%!
+    int doubleCount()
+    {
+        return instanceCounter * 2;
+    }
 %>
 <%= "Double count : " + doubleCount() %>
 

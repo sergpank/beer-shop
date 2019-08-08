@@ -16,10 +16,10 @@ import java.io.PrintWriter;
 import java.util.List;
 
 @Component
-public class BeerSelect extends HttpServlet
+public class BeerSelectServlet extends HttpServlet
 {
   @Autowired
-  private BeerExpert beerExpert = new BeerExpert();
+  private BeerExpert beerExpert;
 
   public void init(ServletConfig config) throws ServletException
   {

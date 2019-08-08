@@ -22,12 +22,23 @@
 
   <servlet>
     <servlet-name>BeerServlet</servlet-name>
-    <servlet-class>headfirst.beer.advisor.web.BeerSelect</servlet-class>
+    <servlet-class>headfirst.beer.advisor.web.BeerSelectServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
     <servlet-name>BeerServlet</servlet-name>
-    <url-pattern>/SelectBeer.do</url-pattern>
+    <url-pattern>/beerAdvisor</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>headfirst.beer.advisor.web.BeerOrderServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>processOrder</url-pattern>
   </servlet-mapping>
 
 </web-app>
